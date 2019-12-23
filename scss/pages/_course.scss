@@ -1,0 +1,55 @@
+.course {
+  .mb-30 {
+    margin-bottom: 30px;
+  }
+  .mb-15 {
+    margin-bottom: 15px;
+  }
+
+  .card {
+    border-color: $base-color;
+    &-header {
+      background-color: $base-color !important;
+      @include font-size(18px);
+      &__title {
+        margin: 0px;
+      }
+    }
+    &-body {
+      p {
+        @include font-size(14px);
+      }
+      h6 {
+        @include font-size(16px);
+      }
+      h4 {
+        @include font-size(16px);
+      }
+      li {
+        @include font-size(14px);
+      }
+      .accordion {
+        .card {
+          border-color: $accordian-border;
+          &-header {
+            background-color: $accordian-head-color !important;
+            padding: 5px 10px !important;
+            button {
+              color: $body-text;
+              i {
+                margin-right: 10px;
+              }
+              &:focus {
+                box-shadow: none !important;
+              }
+            }
+            &:hover{
+                cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

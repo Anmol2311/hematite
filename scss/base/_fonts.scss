@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("#{$font-path}/raleway/Raleway-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// @font-face {
+//     font-family: 'LapsusPro Bold';
+//     src: url('#{$font-path}/lapsus-pro/lapsus-pro-bold.eot?#iefix') format('embedded-opentype'),
+//          url('#{$font-path}/lapsus-pro/lapsus-pro-bold.woff') format('woff'),
+//          url('#{$font-path}/lapsus-pro/lapsus-pro-bold.ttf')  format('truetype'),
+//          url('#{$font-path}/lapsus-pro/lapsus-pro-bold.svg#LapsusPro-Bold') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//   }

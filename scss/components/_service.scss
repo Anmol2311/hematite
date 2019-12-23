@@ -1,0 +1,70 @@
+.service {
+  .col-lg-4 {
+    display: flex;
+  }
+  .card {
+    background-color: $white-text;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      background-color: $base-color;
+      cursor: pointer;
+      .service-box-logo {
+        color: $base-color;
+        background-color: $white-text;
+      }
+      .service-box-title {
+        color: $white-text;
+      }
+      .service-box-text {
+        color: $white-text;
+      }
+    }
+    .service-box {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      //   &:hover {
+      //     background-color: $base-color;
+      //   }
+      &-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 2em;
+        margin: 10px 0;
+        background: #313131;
+        display: inline-block;
+        width: 62px;
+        height: 62px;
+        line-height: 62px;
+        border-radius: 50%;
+        // &:hover{
+        //     color: $base-color;
+        //     background-color: $white-text;
+        // }
+        // transition: all .5s ease-in-out;
+      }
+      &-title {
+        @include font-size(18px);
+        font-weight: 700;
+        color: $body-text;
+        margin: 10px 0;
+        // &:hover{
+        //     color: $white-text;
+        // }
+        // transition: all .5s ease-in-out;
+      }
+      &-text {
+        text-align: justify;
+        margin: 10px 0;
+        @include font-size(14px);
+        // &:hover{
+        //     color:$white-text;
+        // }
+        // transition: all 1s ease-in-out;
+      }
+    }
+  }
+}

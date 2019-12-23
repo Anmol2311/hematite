@@ -1,0 +1,20 @@
+.about{
+    .card{
+        border-color: $base-color;
+        &-header{
+            background-color: $base-color !important;
+            @include font-size(18px);
+        }
+        &-body{
+            p{
+                @include font-size(14px);
+            }
+            h6{
+                @include font-size(16px);
+            }
+            li{
+                @include font-size(14px);
+            }
+        }
+    }
+}

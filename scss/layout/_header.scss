@@ -1,0 +1,98 @@
+.top-header {
+  // padding: 0;
+  &-text {
+    background-color: $primary-color;
+    padding: 5px 0px;
+  }
+  &-contact {
+    @include font-size(14px);
+    color: $white-text;
+    text-align: center;
+    font-family: $primary-font;
+    font-weight: 500;
+    @media (max-width: 415px) {
+      @include font-size(12px);
+    }
+  }
+}
+
+.header-wrapper {
+  & div:first-child {
+    padding: 10px 0px;
+  }
+  .logo {
+    width: 175px;
+    @media (max-width: 415px) {
+      width: 100px;
+      margin-left: 10px;
+    }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      width: 150px;
+    }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      width: 125px;
+    }
+    // max-width: 200px;
+  }
+  .tag-line {
+    @include font-size(30px);
+    font-weight: 700;
+    color: $base-color;
+    margin:0;
+    @media (max-width: 415px) {
+      @include font-size(12px);
+    }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      @include font-size(16px);
+    }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      @include font-size(24px);
+    }
+  }
+}
+
+.nav-wrapper {
+  .custom-nav {
+    padding: 0;
+    background-color: $nav-background;
+    @media (max-width: 415px) {
+      padding: 5px;
+    }
+    @media (min-width: 576px) and (max-width: 991.98px) {
+      padding: 5px;
+    }
+  }
+  .navbar-collapse {
+    border-bottom: 7px solid $base-color;
+  }
+  li {
+    width: 100px;
+    text-align: center;
+    border-right: 2px solid $border-color;
+    @media (max-width: 991.98px) {
+      width: 100%;
+      text-align: left;
+    }
+    &:first-child {
+      background-color: $base-color;
+    }
+    &:hover {
+      background-color: $base-color;
+    }
+  }
+  .nav-link {
+    @include font-size(14px);
+    color: $white-text !important;
+    font-weight: 700;
+    padding: 10px;
+    &:hover {
+      background-color: $base-color;
+    }
+  }
+  .navbar-toggler {
+    background-color: $base-color;
+    &-icon {
+      color: $white-text !important;
+    }
+  }
+}

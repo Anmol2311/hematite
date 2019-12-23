@@ -1,0 +1,135 @@
+footer {
+  .footer-top {
+    background-color: $primary-color;
+    padding: 40px 0px;
+  }
+  .footer-bottom {
+    background-color: $base-color;
+    .container {
+      @media (max-width: 415px) {
+        flex-wrap: wrap;
+      }
+    }
+    &-text {
+      @include font-size(14px);
+      color: $white-text;
+      padding: 10px 0px 15px 0;
+      @media (max-width: 991.98px) {
+        text-align: center;
+      }
+    }
+  }
+  .footer-box {
+    @media (max-width: 415px) {
+      margin-bottom: 20px;
+    }
+    @media (min-width: 576px) and (max-width: 991.98px) {
+      margin-bottom: 20px;
+    }
+    &__title {
+      color: $white-text;
+      @include font-size(18px);
+      font-weight: 700;
+      /* font-weight: 300; */
+      /* line-height: 1; */
+      position: relative;
+      text-transform: uppercase;
+      /* font-family: 'Fjalla One', sans-serif; */
+      /* margin-top: 0; */
+      /* margin-right: 0; */
+      margin-bottom: 25px;
+      /* margin-left: 0; */
+      padding-left: 28px;
+      @media (max-width: 415px) {
+        margin-bottom: 10px;
+      }
+      @media (min-width: 576px) and (max-width: 991.98px) {
+        margin-bottom: 15px;
+      }
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        @include font-size(16px);
+      }
+      &::before {
+        content: "";
+        background-color: $base-color;
+        height: 26px;
+        left: 0px;
+        position: absolute;
+        /* top: -2px; */
+        width: 5px;
+      }
+      .flag-sweden {
+        margin-left: 10px;
+        width: 20px;
+        height: 20px;
+      }
+      .flag-india {
+        margin-left: 10px;
+        width: 20px;
+        height: 15px;
+      }
+    }
+    &__content {
+      color: $white-text;
+      @include font-size(14px);
+      text-align: justify;
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        @include font-size(12px);
+      }
+      .company {
+        &-name {
+          @include font-size(16px);
+          font-weight: 600;
+          margin-bottom: 10px;
+          @media (min-width: 992px) and (max-width: 1199.98px) {
+            @include font-size(14px);
+          }
+        }
+        &-address {
+          @include font-size(14px);
+          padding: 0px 20px;
+          margin-bottom: 10px;
+          // height: 63px;
+          @media (min-width: 576px) and (max-width: 991.98px) {
+            // height: 40px;
+          }
+          @media (min-width: 992px) and (max-width: 1199.98px) {
+            @include font-size(12px);
+            // height: 53px;
+          }
+        }
+        &-email {
+          @include font-size(14px);
+          margin-bottom: 10px;
+          @media (min-width: 992px) and (max-width: 1199.98px) {
+            @include font-size(12px);
+          }
+        }
+        &-contact {
+          @include font-size(14px);
+          margin-bottom: 10px;
+          @media (min-width: 992px) and (max-width: 1199.98px) {
+            @include font-size(12px);
+          }
+        }
+      }
+      .sitemap {
+        &-list {
+          list-style-type: none;
+          li {
+            margin: 10px 0px;
+          }
+        }
+        &-item {
+          color: $white-text;
+          @include font-size(14px);
+          font-weight: 400;
+          // transition: all .5s ease-in-out;
+          &:hover {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
